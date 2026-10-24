@@ -28,7 +28,7 @@ import {
   rgbToOklch,
   computeContrastRatio,
   autoFixContrastForAA,
-} from 'https://cdn.jsdelivr.net/gh/bsulyan/sunasty-color-math@1.0.0/index.js';
+} from 'https://cdn.jsdelivr.net/npm/sunasty-color-math@1.0.1/+esm';
 ```
 
 ## Usage
