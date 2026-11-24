@@ -1,5 +1,5 @@
 {
-  "name": "sunasty-color-math",
+  "name": "@sunasty/color-math",
   "version": "1.0.0",
   "description": "Zero-dependency sRGB, HEX, HSL, and perceptual OKLCH color conversion engine with WCAG 2.1 contrast calculation, AA lightness auto-fix, Tailwind CSS shade matching, and RGBA palette quantization.",
   "type": "module",
