@@ -1,4 +1,4 @@
-# @sunasty/color-math
+# oklch-wcag
 
 Zero-dependency JavaScript and TypeScript library for sRGB, HEX, HSL, and perceptual OKLCH color conversions, WCAG 2.1 contrast calculation, automatic AA lightness adjustment, Tailwind CSS token matching, and RGBA buffer palette quantization.
 
@@ -17,7 +17,7 @@ Extracted from the core engine powering the [Sunasty Color Picker](https://sunas
 Via npm or JSR:
 
 ```bash
-npm install @sunasty/color-math
+npm install oklch-wcag
 # or via JSR
 npx jsr add @sunasty/color-math
 ```
@@ -30,7 +30,7 @@ import {
   rgbToOklch,
   computeContrastRatio,
   autoFixContrastForAA,
-} from 'https://cdn.jsdelivr.net/npm/@sunasty/color-math@1.0.0/+esm';
+} from 'https://cdn.jsdelivr.net/npm/oklch-wcag@1.0.0/+esm';
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ import {
   oklchToRgb,
   formatAllColorNotations,
   parseColorInput,
-} from '@sunasty/color-math';
+} from 'oklch-wcag';
 
 const notations = formatAllColorNotations(37, 99, 235);
 console.log(notations.hex);       // "#2563EB"
@@ -59,7 +59,7 @@ console.log(parsed);              // { r: 37, g: 99, b: 234, hex: "#2563EA" }
 ### WCAG 2.1 Contrast Verification and Automatic Lightness Adjustment
 
 ```js
-import { computeContrastRatio, autoFixContrastForAA } from '@sunasty/color-math';
+import { computeContrastRatio, autoFixContrastForAA } from 'oklch-wcag';
 
 const check = computeContrastRatio('#94A3B8', '#FFFFFF');
 console.log(check);
@@ -78,7 +78,7 @@ import {
   generateHarmonies,
   extractDominantPaletteFromRgba,
   exportPaletteToCssVars,
-} from '@sunasty/color-math';
+} from 'oklch-wcag';
 
 const scale = generateShadesScale(37, 99, 235);
 // [{ step: "50", hex: "#EDF2FE" }, ..., { step: "900", hex: "#071A4B" }]
